@@ -1,8 +1,14 @@
 /******** GLOBAL STYLES ********/
+html {
+    font-size: 16px;
+}
 body {
     font-family: 'montserrat', helvetica, arial, sans-serif;
-    font-size: 16px;
+    font-size: .9em;
     color: black;    
+    display: flex;
+    justify-content: center;
+    
 }
 
 h1,
@@ -14,23 +20,25 @@ h4 {
 }
 
 h1 {
-    font-size: 30px;
-    margin: 0;
+    width: 100%;
+    font-size: 1.875rem;
+    display: flex;
+    justify-content: center;
     padding: 36px 0px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
 
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
 h4 {
-    font-size: 12px;
+    font-size: 0.75rem;
 
 }
 
@@ -40,17 +48,32 @@ p {
 }
 
 .content-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    
 }
 
 /******** HEADER STYLES ********/
-header h1 {
+header {
     /*outline: 3px dotted red; */
-    width: 300px;
-    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    text-align: center;
 
+}
+header h1{
+    width: 100%;
+}
+
+header body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 header h1 span {
@@ -59,22 +82,22 @@ header h1 span {
 
 header nav {
     /*outline: 3px dotted red;*/
-    width: 300px;
-    float: right;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 44px 0px;
 
 }
 
 header nav ul {
     padding: 0;
-    margin: 0;
     text-align: right;
 
 }
 
 header nav ul li {
-    display: inline-block;
-    font-size: 14px;
+    width: 100%;
+    font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: bold;
     padding: 0px 10px;
@@ -85,10 +108,18 @@ header nav ul li a {
     color: #45610E;
 
 }
+.top-section .bottom-section{
+    display: flex;
+    justify-content: center;
+
+}
 
 /********  MAIN STYLES ********/
 /******** TOP SECTION ********/
 .main-image img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     border-top: 3px solid #77A466;
     border-bottom: 3px solid #77A466;
 
@@ -111,26 +142,28 @@ header nav ul li a {
 .section-two,
 .section-three {
    /* outline: 3px dotted red; */
+    width: 100%;
     box-sizing: border-box;
-    float: left;
+    display: flex;
+    justify-content: center;
     padding-left: 0px;
     padding-right: 40px;
 }
 
 .section-one {
-    width: 350px;
+    
     
 }
 
 .section-two {
-    width: 500px;
+    /***width: 500px;***/
     border-right: 5px solid #B9B7B7;
     border-left: 5px solid #B9B7B7;
 
 }
 
 .section-three {
-    width: 350px;
+    /***width: 350px;***/
 
 }
 
@@ -153,6 +186,9 @@ header nav ul li a {
 
 /******** FOOTER STYLES ********/
 footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 8px;
 
@@ -162,6 +198,6 @@ footer span {
     font-family: "galada", cursive;
     text-transform: lowercase;
     color: #45610E;
-    font-size: 14px;
+    font-size: 0.875rem;
 
 }
